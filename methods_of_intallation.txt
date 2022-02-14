@@ -1,0 +1,36 @@
+- with your systems package manager
+	apt/yum
+	Advantages:
+	- get automatic updated including security updates from my OS vendor (ubuntu/Redhat)
+	- managed by the package manger so you can query it, etc...
+	- managed as an official service of my OS and can be controlled by standard OS tools
+	(systemctl, service, ...). Easily run on every boot.
+	- shared libraries and code with other packages (small footprint)
+	Disadvantages:
+	- automatic updates may break my code (rate, but can happen).
+	- OS vendor chooses the version of the package for me.
+		this means that if I move to a different distribution I will get a different
+		version of the package and may need to change my code.
+	- No isolation. The package may read any data and write any data on my system which is
+	permitted.
+- download tarball and install from vendor site
+	Advantages:
+	- Choose my own version and thus if I move to a new distro I can keep my version
+	and don't have to change my code.
+	- I can (with work) isolate the package if I want to. This is not cheap.
+	Disadvantages:
+	- No auto updated and no security updates.
+	- Package is "fat". It includes all of it's libraries.
+	- I manage the installation, no registration with the package manager, I need to make sure the service runs
+	on every reboot.
+- install with docker
+	Advantages:
+	- Isolation. Better security.
+	- I can select my own version. Therefore it's easy to move to a new OS.
+	- Managed by the docker system which can run the containers automatically on boot.
+	Disadvantages:
+	- No updates in specific no security updates.
+	- "fat" installation, the docker image contains everything it needs.
+	- usually runs as root (I can changed that but most people don't know how to change and it and those
+	- My containers are not managed by the OS but rather by docker.
+	who know how to change from root to mortal user rarely do that in practice).
