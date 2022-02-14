@@ -1,0 +1,20 @@
+- install "memchached" on your linux box and check that it is working.
+	There are many ways to install it.
+	Install it in a way your prefer and defend your position about
+	why you installed it the way you did.
+	Write down why you chose to install memcached the way you did.
+	(write arguments for this method and against this method).
+	Check that you memcached works.
+	Write does all the tools you used to check that your memcached server is running
+	correctly.
+
+- find out how to access memcached with python (you will probably need to install some
+	python module?).
+	Write two script (or one) that can insert data into the cache and pull
+	data from the cache.
+
+	* Think of the cache as a huge KEY/VALUE store.
+	putting data is just like putting data in a dictionary in python (this means
+	you will supply a key and value) and getting data is just like getting data
+	from a python dictionary -> you will need to supply the key and you will get
+	the value.
