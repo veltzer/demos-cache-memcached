@@ -34,3 +34,11 @@
 	- usually runs as root (I can changed that but most people don't know how to change and it and those
 	- My containers are not managed by the OS but rather by docker.
 	who know how to change from root to mortal user rarely do that in practice).
+- service in aws
+	Advantages:
+	- Isolation. Automatic security updates (I cannot even cancel it!)
+	- Scaling, durability, reliability
+	- Pay for what you use not for machines.
+	Disadvantages:
+	- Cannot select my own version (usually I get quite an advanced version but I don't select it).
+	- Version gets updated under my feed. I don't get to choose when the update happens.
