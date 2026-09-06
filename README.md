@@ -1,1 +1,1 @@
-# demos-memcached
+# demos-cache-memcached
